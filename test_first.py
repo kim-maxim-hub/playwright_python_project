@@ -11,4 +11,4 @@ def test_wiki2(page: Page):
     page.get_by_role('link', name='Содержание').click()
     page.locator('#ca-talk').click()
     expect(page.locator('#firstHeading')).to_have_text('Обсуждение Википедии:Содержание')
-    
+  
