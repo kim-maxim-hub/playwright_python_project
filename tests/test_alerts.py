@@ -1,5 +1,6 @@
 from playwright.sync_api import Page, Dialog
 
+
 def test_alert(page: Page):
     page.goto('https://www.demoblaze.com/')
 

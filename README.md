@@ -1,4 +1,8 @@
 ### Команда для запуска тестов в режиме с открытием браузера
 - pytest --headed
-### Команда для запуска тест из файла в Firefox
-- pytest -s -v --headed --browser firefox .\tests\test_network.py
+### Команда для запуска c конкретным браузером
+- pytest --browser chrome
+### Команда для запуска с выводом print и большей информацией в терминале
+- pytest -s -v
+### Команда для запуска конректного теста
+- pytest .\tests\test_tabs.py

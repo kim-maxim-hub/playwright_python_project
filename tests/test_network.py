@@ -33,7 +33,7 @@ def test_request_route(page: Page):
     page.get_by_role('button', name='Войти').click()
     expect(page.locator('.alert')).to_have_text('Неверно указана электронная почта, логин или пароль.')
     
-def test_response(page: Page):
+def test_response_route(page: Page):
 
     def change_response(route: Route):
         response = route.fetch()
